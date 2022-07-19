@@ -15,7 +15,9 @@ const Contacts = ({ navigation }) => {
   const AudioDeviceManager =
     Voximplant.Hardware.AudioDeviceManager.getInstance()
 
-  const [authUserDisplayName, setAuthUserDisplayName] = useState<string>('')
+  const [authUserDisplayName, setAuthUserDisplayName] = useState<string | null>(
+    '',
+  )
 
   useEffect(() => {
     const getUserDisplayName = async () => {
@@ -41,7 +43,7 @@ const Contacts = ({ navigation }) => {
     return () => {
       voximplant.off(Voximplant.ClientEvents.IncomingCall)
     }
-  }, [])
+  }, [AudioDeviceManager, navigation, voximplant])
 
   const handleCallPressed = (item: {
     isActive: boolean

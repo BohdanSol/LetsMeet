@@ -2,6 +2,10 @@
   position: absolute
 }
 
+.top-8 {
+  top: 2rem
+}
+
 .top-0 {
   top: 0px
 }
@@ -26,14 +30,6 @@
   left: 1rem
 }
 
-.top-20 {
-  top: 5rem
-}
-
-.top-8 {
-  top: 2rem
-}
-
 .z-20 {
   z-index: 20
 }
@@ -42,13 +38,13 @@
   z-index: 10
 }
 
-.m-2 {
-  margin: 0.5rem
-}
-
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem
 }
 
 .mt-4 {
@@ -63,10 +59,6 @@
   margin-bottom: 1rem
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem
-}
-
 .flex {
   display: flex
 }
@@ -75,20 +67,16 @@
   height: 1.25rem
 }
 
+.h-12 {
+  height: 3rem
+}
+
 .h-6 {
   height: 1.5rem
 }
 
 .h-36 {
   height: 9rem
-}
-
-.h-20 {
-  height: 5rem
-}
-
-.h-12 {
-  height: 3rem
 }
 
 .h-px {
@@ -111,12 +99,12 @@
   width: 6rem
 }
 
-.w-16 {
-  width: 4rem
-}
-
 .w-14 {
   width: 3.5rem
+}
+
+.w-16 {
+  width: 4rem
 }
 
 .flex-1 {
@@ -147,12 +135,12 @@
   border-radius: 9999px
 }
 
-.rounded-xl {
-  border-radius: 0.75rem
-}
-
 .rounded-lg {
   border-radius: 0.5rem
+}
+
+.rounded-xl {
+  border-radius: 0.75rem
 }
 
 .rounded-r-full {
@@ -184,9 +172,9 @@
   background-color: rgb(252 1 91 / var(--tw-bg-opacity))
 }
 
-.bg-zinc-700 {
+.bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(63 63 70 / var(--tw-bg-opacity))
+  background-color: rgb(22 111 255 / var(--tw-bg-opacity))
 }
 
 .bg-white {
@@ -204,23 +192,14 @@
   background-color: rgb(253 164 175 / var(--tw-bg-opacity))
 }
 
-.bg-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 111 255 / var(--tw-bg-opacity))
-}
-
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 238 238 / var(--tw-bg-opacity))
-}
-
 .bg-sky-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity))
 }
 
-.p-2 {
-  padding: 0.5rem
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity))
 }
 
 .px-6 {
@@ -231,14 +210,6 @@
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem
-}
-
-.pb-4 {
-  padding-bottom: 1rem
-}
-
-.pt-1 {
-  padding-top: 0.25rem
 }
 
 .pt-px {
@@ -275,24 +246,4 @@
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(22 111 255 / var(--tw-text-opacity))
-}
-
-.text-sky-800 {
-  --tw-text-opacity: 1;
-  color: rgb(7 89 133 / var(--tw-text-opacity))
-}
-
-.text-sky-900 {
-  --tw-text-opacity: 1;
-  color: rgb(12 74 110 / var(--tw-text-opacity))
-}
-
-.text-red {
-  --tw-text-opacity: 1;
-  color: rgb(252 1 91 / var(--tw-text-opacity))
-}
-
-.text-zinc-700 {
-  --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity))
 }

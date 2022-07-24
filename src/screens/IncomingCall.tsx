@@ -29,11 +29,13 @@ const IncomingCall = () => {
   }, [call, navigation])
 
   const onAccept = () => {
-    const hasPermission = isCallPermissionsGranted()
-    if (!hasPermission) {
-      return
-    }
-    navigation.replace('Calling', { call, isIncoming: true })
+    isCallPermissionsGranted().then((res) => {
+      if (res) {
+        navigation.replace('Calling', { call, isIncoming: true })
+      } else {
+        navigation.goBack()
+      }
+    })
   }
   const onDecline = () => {
     call.decline()

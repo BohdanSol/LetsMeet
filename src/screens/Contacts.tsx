@@ -49,13 +49,11 @@ const Contacts = ({ navigation }) => {
     isActive: boolean
     displayName: string
   }) => {
-    const hasPermission = isCallPermissionsGranted()
-    const isMe = authUserDisplayName === item?.displayName
-    if (!hasPermission || !item.isActive || isMe) {
-      return
-    }
-    navigation.push('Calling', { callee: item })
-    console.log(item)
+    isCallPermissionsGranted().then((res) => {
+      if (res && item.isActive) {
+        navigation.push('Calling', { callee: item })
+      }
+    })
   }
 
   return (

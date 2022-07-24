@@ -102,7 +102,8 @@ const Calling = () => {
       call.current.off(Voximplant.CallEvents.EndpointAdded)
       call.current.off(Voximplant.CallEvents.RemoteVideoStreamAdded)
     }
-  }, [callee.username, isIncoming, navigation, voximplant])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const onEndCallPressed = () => {
     call.current.hangup()
@@ -124,7 +125,7 @@ const Calling = () => {
           Back
         </Text>
         <View style={tw('w-full z-20')}>
-          <Text style={tw('text-center')}>Username</Text>
+          <Text style={tw('text-center')}>{callee?.username}</Text>
           <Text style={tw('text-center')}>{callStatus}</Text>
         </View>
       </View>

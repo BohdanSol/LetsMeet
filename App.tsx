@@ -35,7 +35,7 @@ const HomeStack = () => {
   const tw = useTailwind()
   return (
     <Tab.Navigator
-      initialRouteName="Contacts"
+      initialRouteName="Home"
       screenOptions={{
         headerShown: false,
       }}>
@@ -74,7 +74,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        // initialRouteName="IncomingCall"
+        initialRouteName="HomeStack"
         screenOptions={{
           headerShown: false,
         }}>
